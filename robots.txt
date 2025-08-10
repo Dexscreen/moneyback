@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://getmymoneyback.online/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Block access to admin areas and private files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /config/
+
+# Allow crawling of important pages
+Allow: /
+Allow: /crypto-scams
+Allow: /pig-butchering
+Allow: /ponzi-schemes
+Allow: /complaints
+Allow: /blog/
+Allow: /love-scams
+Allow: /dispute-transactions
+Allow: /contact
+
+# Block crawling of duplicate or unnecessary pages
+Disallow: /search
+Disallow: /*?
+Disallow: /*.pdf$
+
+# Block common spam bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+# Allow Bing Bot for IndexNow
+User-agent: bingbot
+Allow: /

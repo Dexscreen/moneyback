@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File a Complaint - Report Scams and Get Your Money Back | Free Help</title>
+    <meta name="description" content="Report scams and file complaints about crypto fraud, pig butchering, ponzi schemes, and other financial crimes. Free confidential complaint form and expert help.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="canonical" href="https://getmymoneyback.online/complaints">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl font-bold text-blue-700">GetMyMoneyBack.online</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="text-gray-700 hover:text-blue-700">Home</a>
+                    <a href="/crypto-scams" class="text-gray-700 hover:text-blue-700">Crypto Scams</a>
+                    <a href="/pig-butchering" class="text-gray-700 hover:text-blue-700">Pig Butchering</a>
+                    <a href="/ponzi-schemes" class="text-gray-700 hover:text-blue-700">Ponzi Schemes</a>
+                    <a href="/blog/index.html" class="text-gray-700 hover:text-blue-700">Blog</a>
+                    <a href="/complaints" class="text-red-600 font-medium">Report Scam</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-red-600 to-red-800 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">File a Scam Complaint</h1>
+            <p class="text-xl opacity-90">Report fraud, get expert help, and start your recovery process - all completely free and confidential</p>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="bg-white py-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="flex items-center justify-center space-x-3">
+                    <div class="text-green-600 text-2xl">🔒</div>
+                    <span class="font-medium text-gray-700">100% Confidential</span>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                    <div class="text-blue-600 text-2xl">🆓</div>
+                    <span class="font-medium text-gray-700">Completely Free</span>
+                </div>
+                <div class="flex items-center justify-center space-x-3">
+                    <div class="text-purple-600 text-2xl">⚡</div>
+                    <span class="font-medium text-gray-700">Expert Response</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Report Your Scam - Get Help Now</h2>
+                    <p class="text-gray-600">
+                        Filing a detailed complaint is your first step toward potential recovery. Our experts review every submission and provide personalized guidance on next steps. The more information you provide, the better we can help you.
+                    </p>
+                </div>
+
+                <!-- Complaint Form -->
+                <form id="complaint-form" action="" method="POST" class="space-y-6">
+                    <!-- Personal Information -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Your Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="full-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" id="full-name" name="full-name" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="preferred-contact" class="block text-sm font-medium text-gray-700 mb-2">Preferred Contact Method</label>
+                                <select id="preferred-contact" name="preferred-contact" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="both">Both</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scam Type -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Type of Scam *</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <input type="radio" name="scam-type" value="crypto-scam" class="text-blue-600" required>
+                                <span>Crypto Scam / Fake Wallet</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <input type="radio" name="scam-type" value="pig-butchering" class="text-blue-600" required>
+                                <span>Pig Butchering / Romance Investment</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <input type="radio" name="scam-type" value="ponzi-scheme" class="text-blue-600" required>
+                                <span>Ponzi / Pyramid Scheme</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <input type="radio" name="scam-type" value="love-scam" class="text-blue-600" required>
+                                <span>Romance / Love Scam</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <input type="radio" name="scam-type" value="investment-fraud" class="text-blue-600" required>
+                                <span>Investment Fraud</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <input type="radio" name="scam-type" value="other" class="text-blue-600" required>
+                                <span>Other (please specify)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Financial Loss -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Financial Loss Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="amount-lost" class="block text-sm font-medium text-gray-700 mb-2">Total Amount Lost (USD) *</label>
+                                <input type="number" id="amount-lost" name="amount-lost" required min="0" step="0.01" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="0.00">
+                            </div>
+                            <div>
+                                <label for="payment-method" class="block text-sm font-medium text-gray-700 mb-2">How did you send money? *</label>
+                                <select id="payment-method" name="payment-method" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select payment method</option>
+                                    <option value="cryptocurrency">Cryptocurrency</option>
+                                    <option value="bank-transfer">Bank Transfer</option>
+                                    <option value="credit-card">Credit Card</option>
+                                    <option value="debit-card">Debit Card</option>
+                                    <option value="wire-transfer">Wire Transfer</option>
+                                    <option value="money-order">Money Order</option>
+                                    <option value="gift-cards">Gift Cards</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label for="when-sent" class="block text-sm font-medium text-gray-700 mb-2">When did you send the money? *</label>
+                            <input type="date" id="when-sent" name="when-sent" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+
+                    <!-- Scammer Information -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Scammer Information</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="scammer-name" class="block text-sm font-medium text-gray-700 mb-2">Scammer's Name/Username</label>
+                                <input type="text" id="scammer-name" name="scammer-name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="contact-method" class="block text-sm font-medium text-gray-700 mb-2">How did they first contact you? *</label>
+                                    <select id="contact-method" name="contact-method" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Select contact method</option>
+                                        <option value="dating-app">Dating App</option>
+                                        <option value="social-media">Social Media</option>
+                                        <option value="wrong-number">Wrong Number Text/Call</option>
+                                        <option value="email">Email</option>
+                                        <option value="website-ad">Website Advertisement</option>
+                                        <option value="referral">Friend/Family Referral</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="platform-name" class="block text-sm font-medium text-gray-700 mb-2">Platform/Website/App Name</label>
+                                    <input type="text" id="platform-name" name="platform-name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="website-urls" class="block text-sm font-medium text-gray-700 mb-2">Website URLs or App Names</label>
+                                <textarea id="website-urls" name="website-urls" rows="2" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="List any websites, apps, or trading platforms involved"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Description -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">What Happened?</h3>
+                        <div>
+                            <label for="scam-description" class="block text-sm font-medium text-gray-700 mb-2">Detailed Description *</label>
+                            <textarea id="scam-description" name="scam-description" rows="6" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Please provide as much detail as possible about what happened, including dates, promises made, how you were convinced to send money, and any other relevant information."></textarea>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">Include: How it started, what they promised, red flags you noticed, timeline of events, and current status.</p>
+                    </div>
+
+                    <!-- Evidence -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Evidence and Documentation</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">What evidence do you have? (Check all that apply)</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="evidence[]" value="screenshots" class="text-blue-600">
+                                        <span>Screenshots of conversations</span>
+                                    </label>
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="evidence[]" value="transaction-records" class="text-blue-600">
+                                        <span>Transaction records/receipts</span>
+                                    </label>
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="evidence[]" value="bank-statements" class="text-blue-600">
+                                        <span>Bank statements</span>
+                                    </label>
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="evidence[]" value="emails" class="text-blue-600">
+                                        <span>Email communications</span>
+                                    </label>
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="evidence[]" value="audio-video" class="text-blue-600">
+                                        <span>Audio/video recordings</span>
+                                    </label>
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="evidence[]" value="website-links" class="text-blue-600">
+                                        <span>Website links and profiles</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="evidence-description" class="block text-sm font-medium text-gray-700 mb-2">Evidence Details</label>
+                                <textarea id="evidence-description" name="evidence-description" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Describe what evidence you have and how we can help you organize it for reporting to authorities."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Taken -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Actions Already Taken</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="actions-taken[]" value="contacted-bank" class="text-blue-600">
+                                <span>Contacted my bank/credit card company</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="actions-taken[]" value="reported-fbi" class="text-blue-600">
+                                <span>Filed FBI IC3 complaint</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="actions-taken[]" value="reported-ftc" class="text-blue-600">
+                                <span>Filed FTC complaint</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="actions-taken[]" value="local-police" class="text-blue-600">
+                                <span>Reported to local police</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="actions-taken[]" value="platform-reported" class="text-blue-600">
+                                <span>Reported to the platform/app where I met the scammer</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="actions-taken[]" value="none" class="text-blue-600">
+                                <span>Haven't taken any action yet</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Urgency -->
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-yellow-800 mb-3">Urgency Level</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3">
+                                <input type="radio" name="urgency" value="ongoing" class="text-red-600" required>
+                                <span><strong>URGENT:</strong> I'm currently being scammed / They're still contacting me</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="radio" name="urgency" value="recent" class="text-orange-600" required>
+                                <span><strong>Recent:</strong> Scam happened within the last 30 days</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="radio" name="urgency" value="older" class="text-blue-600" required>
+                                <span><strong>Past:</strong> Scam happened more than 30 days ago</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Privacy Notice -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-3">Privacy & Confidentiality Notice</h3>
+                        <p class="text-blue-700 mb-3">
+                            Your information is completely confidential. We use your complaint to:
+                        </p>
+                        <ul class="text-blue-700 list-disc pl-6 space-y-1 mb-4">
+                            <li>Provide personalized recovery guidance</li>
+                            <li>Connect you with appropriate authorities</li>
+                            <li>Track scam patterns to warn others</li>
+                            <li>Offer ongoing support throughout your case</li>
+                        </ul>
+                        <label class="flex items-start space-x-3">
+                            <input type="checkbox" name="privacy-agreement" required class="text-blue-600 mt-1">
+                            <span>I agree to the privacy policy and understand this information will be used to help with my case and protect others from similar scams.</span>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors">
+                            Submit Complaint & Get Help
+                        </button>
+                        <p class="text-sm text-gray-500 mt-2">You'll receive a confirmation email and expert response within 24 hours</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section class="bg-gray-100 py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">What Happens After You Submit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-lg font-semibold mb-2">Expert Review</h3>
+                    <p class="text-gray-600">Our specialists review your case within 24 hours and develop a personalized action plan.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-lg font-semibold mb-2">Guidance & Resources</h3>
+                    <p class="text-gray-600">Receive step-by-step instructions for reporting to authorities and maximizing recovery chances.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-lg font-semibold mb-2">Ongoing Support</h3>
+                    <p class="text-gray-600">Get continued assistance throughout your case, including legal resource connections if needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2024 GetMyMoneyBack.online. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">Your privacy is protected. We never share personal information.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Config -->
+    <script type="text/javascript" src="js/form-config.js"></script>
+    <script type="text/javascript" src="js/tawk-config.js"></script>
+
+    <script>
+        document.getElementById('complaint-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitBtn = document.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual Formspree integration)
+            setTimeout(function() {
+                alert('Thank you for your complaint. We will review your case and respond within 24 hours. Please check your email for confirmation.');
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
